@@ -37,10 +37,10 @@ public class HelloWorldController {
 			@RequestParam("StudentName") String theName, 
 			Model model) {
 		
-	/*below lines 38 - 41 has been replaced by RequestParam annotation in line 34 */
+	/*below lines 42 - 43 has been replaced by RequestParam annotation in line 34 */
 		/*
-		 * //Read the request parameter from a HTML form String theName =
-		 * request.getParameter("StudentName");
+		 * //Read the request parameter from a HTML form 
+		 * String theName = request.getParameter("StudentName");
 		 */
 	
 	//convert the read data to caps
