@@ -1,16 +1,13 @@
-Create a Dynamic Web Project
+Development Process
+-------------------------
+-------------------------
 
-Copy all the SPring Jar files under lib folder in WebContent/WEB-INF/lib
+1. Create custom validation rule
+	1a: Create a CourseCode.java annotation under new package. 
+	1b: Create a CourseCodeConstraintValidator.java Interface
 
-create web.xml and spring-mvc-demo-servlet.xml files. 
+2. Add validation rule to customer Class
 
-as mentioned in spring-mvc-demo-servlet.xml, we need a folder called view under WEB-INF. so, create it. 
+3. Display error messages to HTML form
 
-
-Steps to create first MVC Class:
-------------------------------------
-1. Create a Controller class. (HomeController.java)
-2.Define a controller method (@Controller)
-3.Add Request Mapping to controller method (@RequestMapping("/")
-4.Return a View name ("main-menu")
-5.Develop a view page
+4. Update confirmation page

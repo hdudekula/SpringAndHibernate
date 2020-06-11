@@ -19,11 +19,16 @@
 
 <br><br>
 
-<img src="${pageContext.request.contextPath}/resources/images/smagnolia-tress-556718.png" />
+<a href="Student/ShowForm">Student Form</a>
 
 <br><br>
 
-<input type="button" onclick="doSomeWork()" value="Click Me"/>
+<a href="customer/ShowForm">Customer Form</a>
+
+<br><br>
+<%-- <img src="${pageContext.request.contextPath}/resources/images/smagnolia-tress-556718.png" />
+<br><br>
+<input type="button" onclick="doSomeWork()" value="Click Me"/> --%>
 
 </body>
 </html>
