@@ -26,6 +26,14 @@
 
 	<mvc:resources mapping="/resources/**" location="/resources/" />
 	
+	<!-- Load the customer messages resource file i.e. messages.properties -->
+	
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+	
+	<property name="basenames" value="resources/messages"></property>
+	
+	</bean>
+	
 </beans>
 
 
