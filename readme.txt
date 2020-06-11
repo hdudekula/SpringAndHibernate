@@ -1,16 +1,36 @@
-Create a Dynamic Web Project
+Steps:
+--------------------
 
-Copy all the SPring Jar files under lib folder in WebContent/WEB-INF/lib
+1. set up our development environment. 
 
-create web.xml and spring-mvc-demo-servlet.xml files. 
+2. required field
 
-as mentioned in spring-mvc-demo-servlet.xml, we need a folder called view under WEB-INF. so, create it. 
+3. validate number range : min and max
+
+4. validate using regular expressions (regexp)
+
+5. Custom validation
+
+Development Process
+--------------
+1.1 Download a validation JAR files from Hibernate website
+
+1.2 ADD Jars to the project
+
+1.3 Add all Jars from dist folder of Hibernate validation JAR under WEB-INF/lib folder in our project
+
+Coding
+---------------------
+1. Add Validation rule to customer Class
+
+2. Display error message on HTML form
+
+3. Perform validation in controller classs
+
+4. Update confirmation page
 
 
-Steps to create first MVC Class:
-------------------------------------
-1. Create a Controller class. (HomeController.java)
-2.Define a controller method (@Controller)
-3.Add Request Mapping to controller method (@RequestMapping("/")
-4.Return a View name ("main-menu")
-5.Develop a view page
+Special Note about BindingResult Parameter Order:
+When performing Spring MVC validation, the location of the BindingResult parameter is very important. In the method signature, the BindingResult parameter must appear immediately after the model attribute. 
+
+If you place it in any other location, Spring MVC validation will not work as desired. In fact, your validation rules will be ignored.
